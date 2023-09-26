@@ -34,6 +34,8 @@ function trudy_the_content( $content ) {
         $content .= get_cpt_person_content();
     } else if ( is_singular('newsletter') ) {
         $content .= get_cpt_newsletter_content();
+    } else {
+        $content .= "?$?#?$?#?$?#"; // tft
     }
     
     return $content;
