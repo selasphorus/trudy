@@ -30,6 +30,8 @@ function trudy_the_content( $content ) {
     
     if ( is_singular('person') ) {
         $content .= get_cpt_person_content();
+    } else if ( is_singular('newsletter') ) {
+        $content .= get_cpt_newsletter_content();
     }
     
     return $content;
