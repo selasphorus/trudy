@@ -24,7 +24,7 @@ function site_scripts_and_styles() {
 }
 
 add_filter( 'the_content', 'trudy_the_content', 20, 1 );
-add_filter( 'the_excerpt', 'trudy_the_content', 20, 1 );
+add_filter( 'get_the_excerpt', 'trudy_the_content', 20, 1 );
 function trudy_the_content( $content ) {
     
     $post_id = get_the_ID();
