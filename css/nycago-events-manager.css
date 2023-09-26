@@ -438,6 +438,7 @@ h2.em_events {
 
 div.em_event {
     height: auto;
+    clear: both;
 }
 
 .stc_em_events .em_event p {
