@@ -24,15 +24,30 @@ function site_scripts_and_styles() {
 }
 
 add_filter( 'the_content', 'trudy_the_content', 20, 1 );
-//add_filter( 'the_excerpt', 'trudy_the_content', 999 );
-//add_filter( 'get_the_excerpt', 'trudy_the_content', 999 );
 function trudy_the_content( $content ) {
     
     $post_id = get_the_ID();
     
     if ( is_singular('person') ) {
         $content .= get_cpt_person_content();
-    } else if ( is_singular('newsletter') || is_post_type_archive('newsletter') ) {
+    } else if ( is_singular('newsletter') ) {
+        $content .= get_cpt_newsletter_content();
+    } else {
+        //$content .= "?$?#?$?#?$?#"; // tft
+    }
+    
+    return $content;
+    
+}
+
+add_filter( 'the_excerpt', 'trudy_the_content', 999 );
+function trudy_the_content( $content ) {
+    
+    $post_id = get_the_ID();
+    
+    if ( is_post_type_archive('person') ) {
+        $content .= get_cpt_person_content();
+    } else if ( is_post_type_archive('newsletter') ) {
         $content .= get_cpt_newsletter_content();
     } else {
         //$content .= "?$?#?$?#?$?#"; // tft
