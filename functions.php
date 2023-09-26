@@ -13,9 +13,13 @@ function site_scripts_and_styles() {
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     //wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ) );
     //wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/styles/style.css', array( 'parent-style' ) );
-
+	
+    // Events Manager (EM) style overrides and additions
+    $ver = filemtime( get_stylesheet_directory() . '/css/nycago-events-manager.css');
+    wp_enqueue_style( 'nycago-em-style', get_stylesheet_directory_uri() . '/css/nycago-events-manager.css', NULL, $ver );
+    
     // Enqueue the Dashicons script
-	wp_enqueue_style( 'dashicons' );
+	//wp_enqueue_style( 'dashicons' );
 	
 }
 
