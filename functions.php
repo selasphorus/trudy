@@ -40,8 +40,8 @@ function trudy_the_content( $content ) {
     
 }
 
-add_filter( 'the_excerpt', 'trudy_the_content', 999 );
-function trudy_the_content( $content ) {
+add_filter( 'the_excerpt', 'trudy_the_excerpt', 999 );
+function trudy_the_excerpt( $content ) {
     
     $post_id = get_the_ID();
     
