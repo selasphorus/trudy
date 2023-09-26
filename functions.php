@@ -32,10 +32,10 @@ function trudy_the_content( $content ) {
     
     if ( is_singular('person') ) {
         $content .= get_cpt_person_content();
-    } else if ( is_singular('newsletter') ) {
+    } else if ( is_singular('newsletter') || is_post_type_archive('newsletter') ) {
         $content .= get_cpt_newsletter_content();
     } else {
-        $content .= "?$?#?$?#?$?#"; // tft
+        //$content .= "?$?#?$?#?$?#"; // tft
     }
     
     return $content;
