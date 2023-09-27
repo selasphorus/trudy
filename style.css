@@ -40,7 +40,6 @@ Version:        0.1
 	margin-top: 0;
 }
 
-/*** Kadence overrides ***/
 .entry-hero-container-inner .entry-header {
     min-height: 115px;
 }
@@ -65,6 +64,13 @@ Version:        0.1
 	background-color: #faedc0;
 }
 
+/*** Headers ***/
+
+h2 {
+    font-weight: 700;
+    font-size: 1.7rem;
+}
+
 .loop-entry .entry-header .entry-title,
 .wp-block-post-title,
 h2.wp-block-post-title,
@@ -74,8 +80,8 @@ h2.wp-block-post-title,
 .single-content h4, 
 .single-content h5, 
 .single-content h6 {
-	margin: 0;
-	line-height: 1.5;
+	margin: 0 !important; /* TODO: figure out how not to need the important tag */
+	line-height: 1.4;
 }
 
 .loop-entry .entry-summary p, 
