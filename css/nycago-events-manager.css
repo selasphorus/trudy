@@ -2,9 +2,6 @@
 /* CSS Document */
 
 .em.em-calendar {
-    /* EM defaults
-    --nav-color: #777;
-    */
     --nav-border: 1px solid #dedede;
     --nav-background: none;
     --event-border-color: #ccc;
@@ -377,11 +374,12 @@ table.em-calendar td.eventless {
 
 h2.em_events,
 h3.em_events,
+.em.pixelbones h3,
 .entry-content h2.em_events,
 .entry-content h3.em_events,
 .media_list h2,
 .entry-content .media_list h2 {
-    border-top: 1px solid #ededed; /* changed from #eee in response to AG request re sermon archive */
+    border-top: 1px solid #ededed;
     padding: 2rem 0 0rem 0;
     font-size: 1.4rem;
     font-weight: 400;
