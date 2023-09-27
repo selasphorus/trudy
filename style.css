@@ -40,7 +40,7 @@ Version:        0.1
 	margin-top: 0;
 }
 
-/*** --- ***/
+/*** Kadence overrides ***/
 .entry-hero-container-inner .entry-header {
     min-height: 115px;
 }
@@ -67,7 +67,13 @@ Version:        0.1
 
 .loop-entry .entry-header .entry-title,
 .wp-block-post-title,
-h2.wp-block-post-title {
+h2.wp-block-post-title,
+.single-content h1, 
+.single-content h2, 
+.single-content h3, 
+.single-content h4, 
+.single-content h5, 
+.single-content h6 {
 	margin: 0;
 	line-height: 1.5;
 }
