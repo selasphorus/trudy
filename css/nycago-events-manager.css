@@ -1,6 +1,18 @@
 @charset "UTF-8";
 /* CSS Document */
 
+:root {
+	/* kadence color palette */
+	--k1-red: #AB1429;
+	--k2-yolk: #F3CB0F;
+	--k3-strongest: #1A202C;
+	--k4-strong: #2D3748;
+	--k5-medium: #4A5568;
+	--k6-subtle: #718096;
+	--k7-cream: #FAEDC0;
+	--k8-pale: #F7FAFC;
+}
+
 .em.em-calendar {
     --nav-border: 1px solid #dedede;
     --nav-background: none;
@@ -221,7 +233,7 @@ span.monthyear_picker,
 .em.em-calendar .em-cal-body .em-cal-day.eventless-today.selected_date .em-cal-day-date a:hover,
 table.em-calendar td.selected_date,
 table.em-calendar td.eventful-today.selected_date {
-    background-color: #E81E12;
+    background-color: var(--k1-red);
 }
 
 .em.em-calendar .em-cal-body .em-cal-day.selected_date,
@@ -232,7 +244,7 @@ table.em-calendar td.eventful-today.selected_date {
 .em.em-calendar .em-cal-body .em-cal-day.eventless-today.selected_date .em-cal-day-date a:hover,
 table.em-calendar td.selected_date,
 table.em-calendar td.eventful-today.selected_date {
-    background-color: #E81E12 !important;
+    background-color: var(--k1-red) !important;
 }
 
 .em-cal-day.selected_date a, 
@@ -324,7 +336,7 @@ table.em-calendar td.eventful a:hover,
 table.em-calendar td.eventful-today a:hover,
 table.em-calendar td.eventful-pre a:hover,
 table.em-calendar td.eventful-post a:hover {
-    background-color: #E81E12;
+    background-color: var(--k1-red);
     color: #eeeeee;
     font-weight: bold;
 }
@@ -528,13 +540,13 @@ div.em_event {
 
 .em-pagination .page-numbers,
 .em .em-pagination .page-numbers {
-    background: #E9E7E7;
+    background: transparent;
     color: #333333 !important;
 }
 
 .em-pagination .page-numbers.current,
 .em .em-pagination .page-numbers.current {
-    background: #E81E12;
+    background: var(--k1-red);
     color: #ffffff !important;
     text-decoration: none;
 }
@@ -866,7 +878,7 @@ section.em-search-section-categories header {
 
 .em.pixelbones .input button.button-primary:hover,
 .em.pixelbones .input button.button-secondary:hover {
-	background: #E81E12 !important;
+	background: var(--k1-red) !important;
 }
 
 div.em-search-tools {
@@ -912,7 +924,7 @@ div.css-search div.em-search-main .em-search-submit {
 }
 
 div.css-search div.em-search-main .em-search-submit:hover {
-    background: #E81E12;
+    background: var(--k1-red);
     color: #ffffff;
 }
 
