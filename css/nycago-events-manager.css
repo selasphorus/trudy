@@ -752,6 +752,8 @@ ul.event-categories > li > a {
 
 .edit_link a {
     font-size: 0.9rem;
+    margin: 0 0.5rem;
+    text-decoration: none;
 }
 
 .edit_link a:before {
