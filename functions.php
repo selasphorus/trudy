@@ -20,7 +20,7 @@ function site_scripts_and_styles() {
     wp_enqueue_style( 'nycago-em-style', get_stylesheet_directory_uri() . '/css/nycago-events-manager.css', NULL, $ver );
     
     // Enqueue the Dashicons script
-	//wp_enqueue_style( 'dashicons' );
+	wp_enqueue_style( 'dashicons' );
 	
 }
 
