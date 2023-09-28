@@ -908,6 +908,11 @@ div.css-search,
     border: none;
 }
 
+.selectize-control.single .selectize-input.input-active, 
+.selectize-input {
+	background-color: var(--k7);
+}
+
 div.css-search div.em-search-main .em-search-submit {
     background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #666), color-stop(1, #999) );
     background: -moz-linear-gradient( center top, #666 5%, #999 100% );
@@ -936,6 +941,7 @@ div.css-search div.em-search-text {
     margin: 0;
     padding-left: 0;
     background-image: none;
+    background-color: var(--k7);
 }
 
 div.css-search input, 
