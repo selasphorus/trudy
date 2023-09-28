@@ -755,10 +755,10 @@ ul.event-categories > li > a {
 }
 
 .edit_link a:before {
-    /*font-family: "dashicons";
-    content: "\f464";*/
-    font-family: "Font Awesome 5 Free";
-    content: "\f303";
+    font-family: "dashicons";
+    content: "\f464";
+    /*font-family: "Font Awesome 5 Free";
+    content: "\f303";*/
 }
 
 
