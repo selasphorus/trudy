@@ -40,7 +40,7 @@
     --header-background: var(--date-background);
     --header-color: #333333;
     --date-box-border: 1px solid var(--calendar-background);
-    margin: 0.25rem;
+    margin: 0rem;
     width: auto;
 }
 
