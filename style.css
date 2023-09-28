@@ -12,10 +12,6 @@ Version:        0.1
 	--global-xs-spacing: 1rem;
 }
 
-.single-content p {
-	margin-bottom: var(--global-xs-spacing);	
-}
-
 /*** Pagination ***/
 .pagination .current {
 	border: 2px solid;
