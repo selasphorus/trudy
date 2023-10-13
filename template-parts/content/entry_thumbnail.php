@@ -24,8 +24,8 @@ if ( is_singular( get_post_type() ) ) {
 	?>
 	<div class="post-thumbnail article-post-thumbnail kadence-thumbnail-position-<?php echo esc_attr( kadence()->get_feature_position() ); ?><?php echo ( 'behind' === kadence()->get_feature_position() ? ' align' . esc_attr( kadence()->option( 'post_feature_width', 'wide' ) ) : '' ); ?> kadence-thumbnail-ratio-<?php echo esc_attr( kadence()->option( $support_slug . '_feature_ratio', '2-3' ) ); ?>">
 		<div class="post-thumbnail-inner">
-			<?php the_post_thumbnail( 'post_thumbnail_inner', array( 'class' => 'post-top-featured') ); ?>
-			<?php //the_post_thumbnail( apply_filters( 'kadence_single_featured_image_size', 'full' ), array( 'class' => 'post-top-featured') ); ?>
+			<?php //the_post_thumbnail( 'post_thumbnail_inner', array( 'class' => 'post-top-featured') ); ?>
+			<?php the_post_thumbnail( apply_filters( 'kadence_single_featured_image_size', 'full' ), array( 'class' => 'post-top-featured') ); ?>
 		</div>
 	</div><!-- .post-thumbnail -->
 	<?php 
