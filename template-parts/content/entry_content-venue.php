@@ -13,7 +13,7 @@ namespace Kadence;
 	<?php
 	do_action( 'kadence_single_before_entry_content' );
 
-	echo "TEST";
+	//echo "TEST";
 	
 	the_content(
 		sprintf(
