@@ -29,13 +29,17 @@ function trudy_the_content( $content ) {
     
     $post_id = get_the_ID();
     
-    if ( is_singular('person') ) {
+    $content .= sdg_custom_post_content();
+    
+    /*if ( is_singular('person') ) {
         $content .= get_cpt_person_content();
+    } else if ( is_singular('venue') ) {
+        $content .= get_cpt_venue_content();
     } else if ( is_singular('newsletter') ) {
         $content .= get_cpt_newsletter_content();
     } else {
         //$content .= "?$?#?$?#?$?#"; // tft
-    }
+    }*/
     
     return $content;
     
