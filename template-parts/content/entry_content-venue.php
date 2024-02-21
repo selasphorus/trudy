@@ -14,7 +14,7 @@ namespace Kadence;
 	do_action( 'kadence_single_before_entry_content' );
 
 	if ( queenbee() ) {
-		$settings = array( 'fields' => array( 'venue_info_ip', 'venue_info_vp', 'venue_sources', 'venue_html_ip', 'venue_html_vp', 'organs_html_ip', 'organs_html_vp' ) );
+		$settings = array( 'fields' => array( 'venue_info_ip', 'venue_info_vp', 'venue_sources', 'venue_html_ip', 'organs_html_ip', 'organs_html_vp' ) ); //, 'venue_html_vp'
 		acf_form( $settings );	
 	}
 	
