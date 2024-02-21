@@ -67,6 +67,7 @@ add_action( 'get_header', 'acf_header_hook' );
 function acf_header_hook( $name ) {
 	if ( queenbee() && is_single('venue') ) {
 		acf_form_head();
+		echo "testing acf_header_hook";
 	}
 }
 ?>
