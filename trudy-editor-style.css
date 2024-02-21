@@ -2,7 +2,8 @@
 /*** ***/
 div.wip {
 	margin: 1rem 0;
-	background-color: #eee;
+	border: 2px solid #eee;
+	/*background-color: #fefefe;*/
 }
 
 .source,
