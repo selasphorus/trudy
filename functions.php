@@ -66,7 +66,7 @@ function trudy_the_excerpt( $content ) {
 add_action( 'get_header', 'acf_header_hook' );
 function acf_header_hook( $name ) {
 	if ( queenbee() && is_singular('venue') ) { //
-		echo "testing acf_header_hook";
+		echo "testing acf_header_hook...";
 		acf_form_head();
 	}
 }
