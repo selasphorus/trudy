@@ -35,7 +35,8 @@ function trudy_the_content( $content ) {
     
     $post_id = get_the_ID();
     
-    $content .= sdg_custom_post_content();
+    //$content .= sdg_custom_post_content();
+    $content = sdg_custom_post_content().$content;
     
     /*if ( is_singular('person') ) {
         $content .= get_cpt_person_content();
