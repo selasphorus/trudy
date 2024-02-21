@@ -5,7 +5,10 @@ div.wip {
 	background-color: #eee;
 }
 
-.source {
+.source,
+div.source,
+.venue_source,
+div.venue_source {
 	background-color: yellow;
 }
 
