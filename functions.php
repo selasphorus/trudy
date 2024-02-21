@@ -95,7 +95,7 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 		array(  
 			'title' => 'address',
 			'block' => 'div',
-			'selector' => 'p',
+			'selector' => 'span',
 			'classes' => 'address venue_address wip',
 			'exact' => true,
 			'wrapper' => true,			
