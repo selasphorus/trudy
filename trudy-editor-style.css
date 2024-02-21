@@ -9,9 +9,11 @@ div.wip {
 div.source,
 .venue_source,
 div.venue_source {
-	background-color: yellow;
+	border: 2px solid yellow;
+	/*background-color: yellow;*/
 }
 
 .address {
-	background-color: pink;
+	border: 2px solid pink;
+	/*background-color: pink;*/
 }
