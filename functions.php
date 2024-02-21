@@ -127,8 +127,9 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 	
 	// make sure we don't override other custom <code>content_css</code> files
 	$content_css = get_stylesheet_directory_uri() . '/trudy-editor-style.css';
-	if ( isset( $mce_init[ 'content_css' ] ) )
-	$content_css .= ',' . $mce_init[ 'content_css' ];
+	if ( isset( $init_array[ 'content_css' ] ) ) {
+		$content_css .= ',' . $init_array[ 'content_css' ];
+	}	
 	$init_array['content_css'] = wp_json_encode( $content_css );  
 	
 	return $init_array;  
