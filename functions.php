@@ -80,12 +80,12 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 	$style_formats = array(  
 		// Each array child is a format with it's own settings
 		array(  
-			'title' => 'source',  
-			'block' => 'div',  
-			'classes' => 'source wip',
+			'title' => 'source',
+			'block' => 'div',
+			'selector' => 'p',
+			'classes' => 'source venue_source wip',
 			'exact' => true,
-			'wrapper' => false,
-			
+			'wrapper' => false,			
 		),  
 		/*array(  
 			'title' => '⇠.rtl',  
