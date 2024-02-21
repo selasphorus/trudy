@@ -13,7 +13,10 @@ namespace Kadence;
 	<?php
 	do_action( 'kadence_single_before_entry_content' );
 
-	//echo "TEST";
+	if ( queenbee() ) {
+		$settings = array( 'fields' => array('venue_info_vp') );
+		acf_form( $settings );	
+	}
 	
 	the_content(
 		sprintf(
