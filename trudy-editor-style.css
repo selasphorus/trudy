@@ -18,3 +18,7 @@ div.venue_source {
 	border: 2px solid pink;
 	/*background-color: pink;*/
 }
+
+.organ {
+	border: 2px solid green;
+}

@@ -101,6 +101,14 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			'exact' => true,
 			'wrapper' => true,			
 		),
+		array(  
+			'title' => 'organ',
+			'block' => 'div',
+			'selector' => 'div',
+			'classes' => 'organ wip',
+			//'exact' => true,
+			'wrapper' => true,			
+		),
 		/*array(  
 			'title' => '⇠.rtl',  
 			'block' => 'blockquote',  
