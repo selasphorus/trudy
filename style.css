@@ -1,0 +1,70 @@
+/*
+Theme Name:     Trudy 
+Description:    Child theme for the kadence theme, named for Trudy Pitts
+Author:         Birdhive Development & Design
+Author URI:     https://birdhive.com
+Template:       kadence
+Version:        0.1
+*/
+
+
+:root {
+	--global-xs-spacing: 1rem;
+}
+
+/*** Pagination ***/
+.pagination .current {
+	border: 2px solid;
+}
+.pagination .page-numbers {
+	color: #fff;
+}
+
+/*** Archives ***/
+.single-entry figure.wp-block-post-featured-image {
+	margin: -2rem -2rem 1rem -2rem;
+}
+
+/*** Post Layout ***/
+.single-person .post-thumbnail {
+    float: left;
+    padding: 0 1rem 1rem 0;
+    max-width: 300px;
+}
+
+.single-content {
+	margin-top: 0;
+}
+
+.home .content-bg {
+	background-color: inherit;
+}
+
+.home .entry.single-entry {
+	box-shadow: none;
+}
+
+/*** Display Content ***/
+.dsplycntnt-posts.links .item_title {
+	display: inline-block;
+}
+
+
+/*** ARCHIVES ***/
+
+/*h2.entry-title,
+.archive h2.entry-title, 
+.blog h2.entry-title, 
+.search-results h2.entry-title,*/
+h3.entry-title,
+.nycago_em_events .event_title {
+    font-size: 1.3rem;
+    font-weight: normal;
+    margin: 0 0 0.2rem 0;
+}
+
+/*** ***/
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+	background: var(--k7);
+}
