@@ -26,7 +26,7 @@ function site_scripts_and_styles() {
 
 add_action( 'admin_init', 'trudy_theme_add_editor_styles' );
 function trudy_theme_add_editor_styles() {
-    add_editor_style( 'editor-style.css' );
+    add_editor_style( 'trudy-editor-style.css' );
 }
 
 add_filter( 'the_content', 'trudy_the_content', 20, 1 );
