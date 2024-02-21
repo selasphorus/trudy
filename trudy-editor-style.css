@@ -1,15 +1,13 @@
 
 /*** ***/
-div.wip {
-	margin: 1rem 0;
+.wip {
+	margin: 1rem 0;	
+	padding: 1rem;
 	border: 2px solid #eee;
-	/*background-color: #fefefe;*/
 }
 
 .source,
-div.source,
-.venue_source,
-div.venue_source {
+.venue_source {
 	border: 2px solid orange;
 }
 
