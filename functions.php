@@ -84,7 +84,7 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			'block' => 'div',  
 			'classes' => 'source wip',
 			'exact' => true,
-			'wrapper' => true,
+			'wrapper' => false,
 			
 		),  
 		/*array(  
