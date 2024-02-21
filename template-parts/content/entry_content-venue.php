@@ -12,11 +12,6 @@ namespace Kadence;
 <div class="<?php echo esc_attr( apply_filters( 'kadence_entry_content_class', 'entry-content single-content' ) ); ?>">
 	<?php
 	do_action( 'kadence_single_before_entry_content' );
-
-	if ( queenbee() ) {
-		$settings = array( 'fields' => array( 'venue_info_ip', 'venue_info_vp', 'venue_sources', 'venue_html_ip', 'organs_html_ip', 'organs_html_vp' ) ); //, 'venue_html_vp'
-		acf_form( $settings );	
-	}
 	
 	the_content(
 		sprintf(
@@ -40,5 +35,11 @@ namespace Kadence;
 		)
 	);
 	do_action( 'kadence_single_after_entry_content' );
+
+	if ( queenbee() ) {
+		$settings = array( 'fields' => array( 'venue_info_ip', 'venue_info_vp', 'venue_sources', 'venue_html_ip', 'organs_html_ip', 'organs_html_vp' ) ); //, 'venue_html_vp'
+		acf_form( $settings );	
+	}
+	
 	?>
 </div><!-- .entry-content -->
