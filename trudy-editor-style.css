@@ -10,13 +10,11 @@ div.wip {
 div.source,
 .venue_source,
 div.venue_source {
-	border: 2px solid yellow;
-	/*background-color: yellow;*/
+	border: 2px solid orange;
 }
 
 .address {
 	border: 2px solid pink;
-	/*background-color: pink;*/
 }
 
 .organ {
