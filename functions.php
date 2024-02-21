@@ -63,6 +63,15 @@ function trudy_the_excerpt( $content ) {
 }
 
 // Add custom styles to TinyMCE
+
+// Register our callback to the appropriate filter
+add_filter( 'mce_buttons_2', 'my_mce_buttons_2' );
+// Callback function to insert 'styleselect' into the $buttons array
+function my_mce_buttons_2( $buttons ) {
+	array_unshift( $buttons, 'styleselect' );
+	return $buttons;
+}
+
 // Attach callback to 'tiny_mce_before_init' 
 add_filter( 'tiny_mce_before_init', 'trudy_mce_before_init_insert_formats' );  
 // Callback function to filter the MCE settings
