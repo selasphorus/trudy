@@ -61,4 +61,12 @@ function trudy_the_excerpt( $content ) {
     return $content;
     
 }
+
+// Hook into header for ACF form function, where applicable
+add_action( 'get_header', 'acf_header_hook' );
+function acf_header_hook( $name ) {
+	if ( queenbee() && is_single('venue') ) {
+		acf_form_head();
+	}
+}
 ?>
