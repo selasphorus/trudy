@@ -90,8 +90,16 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			'selector' => 'p',
 			'classes' => 'source venue_source wip',
 			'exact' => true,
-			'wrapper' => false,			
-		),  
+			'wrapper' => true,			
+		),
+		array(  
+			'title' => 'address',
+			'block' => 'div',
+			'selector' => 'p',
+			'classes' => 'address venue_address wip',
+			'exact' => true,
+			'wrapper' => true,			
+		),
 		/*array(  
 			'title' => '⇠.rtl',  
 			'block' => 'blockquote',  
