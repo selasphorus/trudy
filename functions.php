@@ -62,6 +62,41 @@ function trudy_the_excerpt( $content ) {
     
 }
 
+// Add custom styles to TinyMCE
+// Attach callback to 'tiny_mce_before_init' 
+add_filter( 'tiny_mce_before_init', 'trudy_mce_before_init_insert_formats' );  
+// Callback function to filter the MCE settings
+function trudy_mce_before_init_insert_formats( $init_array ) {  
+	// Define the style_formats array
+	$style_formats = array(  
+		// Each array child is a format with it's own settings
+		array(  
+			'title' => '.source',  
+			'block' => 'blockquote',  
+			'classes' => 'source',
+			'wrapper' => true,
+			
+		),  
+		/*array(  
+			'title' => '⇠.rtl',  
+			'block' => 'blockquote',  
+			'classes' => 'rtl',
+			'wrapper' => true,
+		),
+		array(  
+			'title' => '.ltr⇢',  
+			'block' => 'blockquote',  
+			'classes' => 'ltr',
+			'wrapper' => true,
+		),*/
+	);  
+	// Insert the array, JSON ENCODED, into 'style_formats'
+	$init_array['style_formats'] = wp_json_encode( $style_formats );  
+	
+	return $init_array;  
+  
+}
+
 // Hook into header for ACF form function, where applicable
 add_action( 'get_header', 'acf_header_hook' );
 function acf_header_hook( $name ) {
