@@ -1,0 +1,14 @@
+
+/*** ***/
+.source,
+.venue_source {
+	border: 2px solid orange;
+}
+
+.address {
+	border: 2px solid pink;
+}
+
+.organ {
+	border: 2px solid green;
+}
