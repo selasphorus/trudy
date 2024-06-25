@@ -37,7 +37,7 @@ namespace Kadence;
 	do_action( 'kadence_single_after_entry_content' );
 
 	if ( queenbee() ) {
-		$settings = array( 'fields' => array( 'organ_sum_html', 'organ_html', 'divisions_html', 'stops_summary', 'model', 'opus_num', 'build_year' ) );
+		$settings = array( 'fields' => array( 'builder', 'model', 'opus_num', 'build_year', 'venue_filename', 'organ_sum_html', 'organ_html', 'divisions_html', 'stops_summary', 'model', 'opus_num', 'build_year' ) );
 		acf_form( $settings );	
 	}
 	
