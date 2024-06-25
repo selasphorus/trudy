@@ -142,7 +142,7 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 // Hook into header for ACF form function, where applicable
 add_action( 'get_header', 'acf_header_hook' );
 function acf_header_hook( $name ) {
-	if ( queenbee() && is_singular('venue') ) {
+	if ( queenbee() && ( is_singular('venue') || is_singular('organ') ) ) {
 		//echo "testing acf_header_hook..."; // tft
 		acf_form_head();
 	}
