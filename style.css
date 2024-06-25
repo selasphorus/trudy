@@ -69,9 +69,21 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 	background: var(--k7);
 }
 
-
 .wip {
 	margin: 1rem 0;	
 	padding: 1rem;
 	border: 2px solid #999;
+}
+
+.wip.source,
+.wip.venue_source {
+	border: 2px solid orange;
+}
+
+.wip.address {
+	border: 2px solid pink;
+}
+
+.wip.organ {
+	border: 2px solid green;
 }
