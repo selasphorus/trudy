@@ -75,15 +75,15 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 	border: 2px solid #999;
 }
 
-.wip.source,
-.wip.venue_source {
+.wip .source,
+.wip .venue_source {
 	border: 2px solid orange;
 }
 
-.wip.address {
+.wip .address {
 	border: 2px solid pink;
 }
 
-.wip.organ {
+.wip .organ {
 	border: 2px solid green;
 }
