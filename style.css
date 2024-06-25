@@ -73,5 +73,5 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .wip {
 	margin: 1rem 0;	
 	padding: 1rem;
-	border: 2px solid #eee;
+	border: 2px solid #999;
 }
