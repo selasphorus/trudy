@@ -25,6 +25,11 @@ Version:        0.1
 	margin: -2rem -2rem 1rem -2rem;
 }
 
+.wp-site-blocks .post-thumbnail.archive_item_image {
+    padding-bottom: 0;
+    height: auto;
+}
+
 /*** Post Layout ***/
 .single-person .post-thumbnail {
     float: left;
