@@ -7,6 +7,21 @@
  */
 define( 'TEMPLATE_URL', get_stylesheet_directory_uri() );
 
+/* +~+~+ *** +~+~+ */
+
+// Function to check for dev/admin user
+function queenbee() {
+	$current_user = wp_get_current_user();
+	$username = $current_user->user_login;
+	$useremail = $current_user->user_email;
+	//
+    if ( $username == 'queenbee' || $useremail == "birdhive@gmail.com" ) {
+    	return true;
+    } else {
+    	return false;
+    }
+}
+
 add_action( 'wp_enqueue_scripts', 'site_scripts_and_styles' );
 function site_scripts_and_styles() {
     
