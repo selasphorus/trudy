@@ -104,8 +104,8 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 		array(  
 			'title' => 'venue',
 			'block' => 'div',
-			'selector' => 'p',
-			'classes' => 'venue venue_name wip',
+			'selector' => 'h3',
+			'classes' => 'venue venue_name',
 			'exact' => true,
 			'wrapper' => true,			
 		),
