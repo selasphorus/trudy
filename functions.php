@@ -102,6 +102,14 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 	$style_formats = array(  
 		// Each array child is a format with it's own settings
 		array(  
+			'title' => 'venue',
+			'block' => 'div',
+			'selector' => 'p',
+			'classes' => 'venue venue_name wip',
+			'exact' => true,
+			'wrapper' => true,			
+		),
+		array(  
 			'title' => 'source',
 			'block' => 'div',
 			'selector' => 'p',
