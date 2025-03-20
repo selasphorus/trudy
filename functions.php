@@ -118,6 +118,14 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			'wrapper' => true,			
 		),
 		array(  
+			'title' => 'location_info',
+			'block' => 'p',
+			//'selector' => 'p',
+			'classes' => 'location_info',
+			//'exact' => true,
+			//'wrapper' => true,			
+		),
+		array(  
 			'title' => 'address',
 			'inline' => 'span',
 			//'block' => 'div',
