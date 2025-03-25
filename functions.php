@@ -150,18 +150,6 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			//'exact' => true,
 			//'wrapper' => true,			
 		),
-		/*array(  
-			'title' => '⇠.rtl',  
-			'block' => 'blockquote',  
-			'classes' => 'rtl',
-			'wrapper' => true,
-		),
-		array(  
-			'title' => '.ltr⇢',  
-			'block' => 'blockquote',  
-			'classes' => 'ltr',
-			'wrapper' => true,
-		),*/
 	);  
 	// Insert the array, JSON ENCODED, into 'style_formats'
 	$init_array['style_formats'] = wp_json_encode( $style_formats );
@@ -170,7 +158,6 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 	$content_css = get_stylesheet_directory_uri() . '/trudy-editor-style.css';
 	if ( isset( $init_array[ 'content_css' ] ) ) {
 		$content_css =  $init_array[ 'content_css' ].','.$content_css;
-		//$content_css .= ',' . $init_array[ 'content_css' ];
 	}	
 	$init_array['content_css'] = $content_css;  
 	
