@@ -143,10 +143,10 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			'wrapper' => true,			
 		),
 		array(  
-			'title' => 'done', // for info copied into other fields and left in place for archival purposes only
+			'title' => 'archival', // for info copied into other fields and left in place for archival purposes only -- aka "done"
 			'block' => 'div',
 			//'selector' => 'div',
-			'classes' => 'done',
+			'classes' => 'done archival',
 			//'exact' => true,
 			'wrapper' => true,			
 		),
