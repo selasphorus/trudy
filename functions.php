@@ -28,7 +28,7 @@ function site_scripts_and_styles() {
     //wp_enqueue_style( 'trudy-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
     wp_enqueue_style( 'child-style', get_stylesheet_uri(), array( 'parent-style' ) );
-    if ( queenbee() ) { wp_enqueue_style( 'trudy-editor-style', get_stylesheet_directory_uri().'/trudy-editor-style.css' ); }
+    if ( function_exists('sdg_editmode') && !sdg_editmode() ) { wp_enqueue_style( 'trudy-editor-style', get_stylesheet_directory_uri().'/trudy-editor-style.css' ); }
     //wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/styles/style.css', array( 'parent-style' ) );
 	
     // Events Manager (EM) style overrides and additions
@@ -157,7 +157,7 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 	// make sure we don't override other custom <code>content_css</code> files
 	$content_css = get_stylesheet_directory_uri() . '/trudy-editor-style.css';
 	if ( isset( $init_array[ 'content_css' ] ) ) {
-		$content_css =  $init_array[ 'content_css' ].','.$content_css;
+		$content_css = $init_array[ 'content_css' ].','.$content_css;
 	}	
 	$init_array['content_css'] = $content_css;  
 	
