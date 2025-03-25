@@ -142,6 +142,14 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 			//'exact' => true,
 			'wrapper' => true,			
 		),
+		array(  
+			'title' => 'done', // for info copied into other fields and left in place for archival purposes only
+			'block' => 'div',
+			//'selector' => 'div',
+			'classes' => 'done',
+			//'exact' => true,
+			'wrapper' => true,			
+		),
 		/*array(  
 			'title' => '⇠.rtl',  
 			'block' => 'blockquote',  
