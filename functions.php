@@ -144,11 +144,11 @@ function trudy_mce_before_init_insert_formats( $init_array ) {
 		),
 		array(  
 			'title' => 'archival', // for info copied into other fields and left in place for archival purposes only -- aka "done"
-			'block' => 'div',
+			'inline' => 'span',
 			//'selector' => 'div',
 			'classes' => 'done archival',
 			//'exact' => true,
-			'wrapper' => true,			
+			//'wrapper' => true,			
 		),
 		/*array(  
 			'title' => '⇠.rtl',  
