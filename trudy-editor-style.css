@@ -1,4 +1,28 @@
-/*** Editor Style ***/
+/*** Editor Styles ***/
+
+input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+	background: var(--k7);
+}
+
+.wip {
+	display:none;
+	/*margin: 1rem 0;	
+	padding: 1rem;*/
+	border: 2px solid #999;
+}
+
+.wip .source,
+.wip .venue_source {
+	border: 2px solid orange;
+}
+
+.wip .address {
+	border: 2px solid pink;
+}
+
+.wip .organ {
+	border: 2px solid green;
+}
 
 .source,
 .venue_source {
@@ -24,6 +48,8 @@
     font-size: 0.9rem;
 }
 
+/* Show certain content only in the context of tinymce editor */
+#tinymce .wip,
 #tinymce .archival,
 #tinymce .done {
     display: inline-block;
