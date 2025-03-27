@@ -45,28 +45,6 @@ function trudy_theme_add_editor_styles() {
     add_editor_style( get_stylesheet_directory_uri().'/trudy-editor-style.css' );
 }
 
-add_filter( 'the_content', 'trudy_the_content', 20, 1 );
-function trudy_the_content( $content ) {
-    
-    $post_id = get_the_ID();
-    
-    //$content .= sdg_custom_post_content();
-    $content = sdg_custom_post_content().$content;
-    
-    /*if ( is_singular('person') ) {
-        $content .= get_cpt_person_content();
-    } else if ( is_singular('venue') ) {
-        $content .= get_cpt_venue_content();
-    } else if ( is_singular('newsletter') ) {
-        $content .= get_cpt_newsletter_content();
-    } else {
-        //$content .= "?$?#?$?#?$?#"; // tft
-    }*/
-    
-    return $content;
-    
-}
-
 add_filter( 'the_excerpt', 'trudy_the_excerpt', 999 );
 function trudy_the_excerpt( $content ) {
     
