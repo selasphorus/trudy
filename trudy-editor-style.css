@@ -24,8 +24,8 @@
     font-size: 0.9rem;
 }
 
-.editmode .archival,
-.editmode .done {
+#tinymce .archival,
+#tinymce .done {
     display: inline-block;
 }
 
