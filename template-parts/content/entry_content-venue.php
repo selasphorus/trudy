@@ -35,13 +35,6 @@ namespace Kadence;
 		)
 	);
 	do_action( 'kadence_single_after_entry_content' );
-
-	// TODO: add link to old version of venue page -- e.g. /Organs/Brx/html/RCOrphanAsylum.html
-	
-	if ( function_exists('sdg_editmode') && sdg_editmode() ) {
-		$settings = array( 'fields' => array( 'venue_info_ip', 'venue_info_vp', 'venue_addresses', 'building_dates', 'venue_sources', 'venue_html_ip', 'organs_html_ip', 'organs_html_vp' ) ); //, 'venue_html_vp'
-		acf_form( $settings );	
-	}
 	
 	?>
 </div><!-- .entry-content -->
