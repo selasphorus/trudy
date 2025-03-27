@@ -70,3 +70,8 @@ h3.entry-title,
 }
 
 /*** ***/
+
+hr {
+    border-bottom: 2px solid #ab1429;
+    margin: 1rem 0;
+}
