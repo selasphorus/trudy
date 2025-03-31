@@ -11,7 +11,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 	border: 2px solid #999;
 }
 .wipf {
-	border: 2px solid orange;
+	border: 1px dotted grey;
 	padding: 1rem;
 }
 
@@ -31,6 +31,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .source,
 .venue_source {
 	border: 2px solid orange;
+	display: inline-block;
 }
 
 .address {
