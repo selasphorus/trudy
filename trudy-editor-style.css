@@ -33,6 +33,9 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 	border: 2px solid orange;
 	display: inline-block;
 }
+.wipf .source {
+	border: none;
+}
 
 .address {
 	border: 2px solid pink;
