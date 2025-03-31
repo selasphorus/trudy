@@ -20,6 +20,7 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 	border: 2px solid orange;
 }
 
+.address,
 .wip .address {
 	border: 2px solid pink;
 	display: inline-block;
@@ -38,10 +39,6 @@ input[type="text"], input[type="email"], input[type="url"], input[type="password
 .wipf .address,
 .wipf .source {
 	border: none;
-}
-
-.address {
-	border: 2px solid pink;
 }
 
 .organ {
